@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation Bangladesh</title>
-    <!-- <style>
+     <style>
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +12,9 @@
 }
 
 .body {
-  font-family: "Lexend", sans-serif;
+  font-family: "body", sans-serif;
 }
-    </style> -->
+    </style>
     <link
     href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
     rel="stylesheet"
@@ -24,7 +24,6 @@
 </head>
 <body>
     <body class="body">
-        <!-- nav section -->
         <navbar class="fixed w-full z-[100]">
           <div class="nav bg-[rgba(43,66,50,0.1)] md:px-48 py-[24px]">
             <div class="nav-start">
@@ -34,7 +33,7 @@
             </div>
             <div class="nav-center">
               <div class="flex items-center md:gap-7 -ml-7 md:ml-0">
-                <img src="assets/logo.png"donation website icon" />
+                <img src="assets/logo.png" alt="donation icon" />
                 <p class="text-[20px] text-[rgb(17,17,17)] font-semibold">
                   Donation Bangladesh
                 </p>
@@ -42,7 +41,7 @@
             </div>
             <div class="nav-end">
               <div class="flex items-center gap-2">
-                <img src="assets/coin.png" alt="donation website icon" />
+                <img src="assets/coin.png" alt="donation icon" />
                 <p class="text-[20px] text-[rgb(17,17,17)] font-semibold">
                   <span id="totalDonationNeed">50000</span> BDT
                 </p>
@@ -50,6 +49,199 @@
             </div>
           </div>
         </navbar>
+        <main class="pt-24 bg-[rgba(43,66,50,0.1)] min-h-svh">
+            <div class="div my-0 h-0"></div>
+            <div class="md:px-48 py-[24px]">
+              <div class="flex items-center justify-center gap-7">
+                <button class="bottom" id="donate_btn">Donation</button>
+                <button class="btn" id="history_btn">History</button>
+              </div>
+            </div>
+            <section id="donationSection">
+              <div class="md:px-48 py-[24px]">
+                <div
+                  class="bg-white md:flex items-center p-[34px] gap-8 rounded-2xl border border-[rgba(17,17,17,0.1)] border-solid"
+                >
+                  <img
+                    src="assets/noakhali.png"
+                    alt="noakhali food image"
+                    class="mb-3 md:mb-0"
+                  />
+                  <div>
+                    <div
+                      class="flex items-center w-40 bg-[rgba(17,17,17,0.05)] py-2 px-4 gap-2"
+                    >
+                      <img src="assets/coin.png" alt="donation coin" />
+                      <p id="NoakhaliDonateAmount">900</p>
+                    </div>
+                    <h3
+                      id="donation_name"
+                      class="text-[20px] font-bold text-black py-4"
+                    >
+                      Donate for Flood at Noakhali, Bangladesh
+                    </h3>
+                    <p class="text-[rgba(17,17,17,0.7)] font-light text-[16px]">
+                      The recent floods in Noakhali have caused significant damage to
+                      homes infrastructure. Your donation will help provide essential
+                      supplies and to those affected by this disaster. Every
+                      contribution, big or small, makes difference. Please join us in
+                      supporting the relief efforts and making a positive impact on
+                      the lives of those in need.
+                    </p>
+                    <form class="w-full pt-6">
+                      <p class="warning_message text-red-500"></p>
+                      <div class="form-control">
+                        <input
+                          id="AmountOfNoakhali"
+                          type="text"
+                          placeholder="Write Donation Amount"
+                          class="input input-bordered"
+                          required
+                        />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button
+                          class="bottom text-xl font-semibold"
+                          id="submiteBtnNoakhali"
+                        >
+                          Donate Now
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="md:px-48 py-[24px]">
+                <div
+                  class="bg-white md:flex items-center p-[34px] gap-8 rounded-2xl border border-[rgba(17,17,17,0.1)] border-solid"
+                >
+                  <img
+                    src="assets/feni.png"
+                    alt="feni food image "
+                    class="mb-3 md:mb-0"
+                  />
+                  <div>
+                    <div
+                      class="flex items-center w-40 bg-[rgba(17,17,17,0.05)] py-2 px-4 gap-2"
+                    >
+                      <img src="assets/coin.png" alt="donation coin" />
+                      <p id="FeniDonateAmount">1800</p>
+                    </div>
+                    <h3
+                      class="text-[20px] font-bold text-black py-4"
+                      id="feni_name"
+                    >
+                      Donate for Flood Relief in Feni,Bangladesh
+                    </h3>
+                    <p class="text-[rgba(17,17,17,0.7)] font-light text-[16px]">
+                      The recent floods in Feni have caused significant damage to
+                      homes infrastructure. Your donation will help provide essential
+                      supplies and to those affected by this disaster. Every
+                      contribution, big or small, makes difference. Please join us in
+                      supporting the relief efforts and making a positive impact on
+                      the lives of those in need.
+                    </p>
+                    <!-- donation from -->
+                    <form class="w-full pt-6">
+                      <div class="form-control">
+                        <input
+                          id="doanteAmountOfFeni"
+                          type="text"
+                          placeholder="Write Donation Amount"
+                          class="input input-bordered"
+                          required
+                        />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button
+                          class="bottom text-xl font-semibold"
+                          id="SubmiteBtnFeni"
+                        >
+                          Donate Now
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="md:px-48 py-[24px]">
+                <div
+                  class="bg-white md:flex items-center p-[34px] gap-8 rounded-2xl border border-[rgba(17,17,17,0.1)] border-solid"
+                >
+                  <img
+                    src="assets/quota-protest.png"
+                    alt="quota food image "
+                    class="mb-3 md:mb-0"
+                  />
+                  <div>
+                    <div
+                      class="flex items-center w-40 bg-[rgba(17,17,17,0.05)] py-2 px-4 gap-2"
+                    >
+                      <img src="assets/coin.png" alt="donation coin" />
+                      <p id="QuateDonateAmount">2700</p>
+                    </div>
+                    <h3
+                      class="text-[20px] font-bold text-black py-4"
+                      id="quota_name"
+                    >
+                      Aid for Injured in the Quota Movement
+                    </h3>
+                    <p class="text-[rgba(17,17,17,0.7)] font-light text-[16px]">
+                      The recent floods in Quota have caused significant damage to
+                      homes infrastructure. Your donation will help provide essential
+                      supplies and to those affected by this disaster. Every
+                      contribution, big or small, makes difference. Please join us in
+                      supporting the relief efforts and making a positive impact on
+                      the lives of those in need.
+                    </p>
+                    <form class="w-full pt-6">
+                      <div class="form-control">
+                        <input
+                          id="doanteAmountOfquota"
+                          type="text"
+                          placeholder="Write Donation Amount"
+                          class="input input-bordered"
+                          required
+                        />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button
+                          class="bottom text-xl font-semibold"
+                          id="SubmiteBtnQuota"
+                        >
+                          Donate Now
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <dialog id="modal_dialog" class="modal">
+                <div class="modal-box text-center">
+                  <h3 class="text-2xl font-bold">Thank you for your donation!</h3>
+                  <div class="py-4">
+                    <img
+                      class="w-9 h-9 mx-auto"
+                      src="/assets/coin.png"
+                      alt="donation coin"
+                    />
+                  </div>
+                  <p class="text-lg font-semibold">You have donation Humankind</p>
+                  <h3 class="text-5xl font-bold text-green-600">success</h3>
+                  <div class="modal-action">
+                    <form method="dialog">
+                      <button class="bottom">Close</button>
+                    </form>
+                  </div>
+                </div>
+              </dialog>
+            </section>
+      
+            <!-- history section -->
+            <section id="historySection" class="hidden">
+              <div class="md:px-48 py-[10px]" id="DataHistory"></div>
+            </section>
+          </main>
     
 </body>
 </html>
