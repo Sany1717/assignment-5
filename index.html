@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation Bangladesh</title>
-     <style>
+   <!-- <style>
 * {
   margin: 0;
   padding: 0;
@@ -14,24 +14,36 @@
 .body {
   font-family: "body", sans-serif;
 }
-    </style>
+     </style>  -->
+
     <link
     href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
     rel="stylesheet"
     type="text/css"
   />
   <script src="https://cdn.tailwindcss.com"></script>
+   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .body {
+      font-family: "body", sans-serif;
+    }
+         </style>
 </head>
 <body>
     <body class="body">
-        <navbar class="fixed w-full z-[100]">
-          <div class="nav bg-[rgba(43,66,50,0.1)] md:px-48 py-[24px]">
-            <div class="nav-start">
+      <navbar class="fixed w-full z-[100]">
+        <div class="navbar bg-[rgba(43,66,50,0.1)] md:px-48 py-[24px]">
+          <div class="navbar-start">
               <a href="blog/blog.html">
                 <button class="bottom">Blog</button>
               </a>
             </div>
-            <div class="nav-center">
+            <div class="navbar-center">
               <div class="flex items-center md:gap-7 -ml-7 md:ml-0">
                 <img src="assets/logo.png" alt="donation icon" />
                 <p class="text-[20px] text-[rgb(17,17,17)] font-semibold">
@@ -39,7 +51,7 @@
                 </p>
               </div>
             </div>
-            <div class="nav-end">
+            <div class="navbar-end">
               <div class="flex items-center gap-2">
                 <img src="assets/coin.png" alt="donation icon" />
                 <p class="text-[20px] text-[rgb(17,17,17)] font-semibold">
@@ -225,11 +237,10 @@
                       alt="donation coin"
                     />
                   </div>
-                  <p class="text-lg font-semibold">You have donation Humankind</p>
                   <h3 class="text-5xl font-bold text-green-600">success</h3>
                   <div class="modal-action">
                     <form method="dialog">
-                      <button class="bottom">Close</button>
+                      <button class="bottom" button-center>Ok</button>
                     </form>
                   </div>
                 </div>
@@ -241,6 +252,10 @@
               <div class="md:px-48 py-[10px]" id="dataHistory"></div>
             </section>
           </main>
+
+          <script src="./js/handlebtn.js"></script>
+          <script src="./js/CommonFeatcher.js"></script>
+          <script src="./js/bottom.js"></script>
     
 </body>
 </html>
